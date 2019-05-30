@@ -18,7 +18,7 @@ h1 {
   width: 400px;
 }
 
-.inputs{
+.inputs {
   width: inherit;
   display: flex;
   flex-direction: column;
@@ -30,5 +30,5 @@ input {
 }
 
 .addOption {
-  margin-top: 10px; 
+  margin-top: 10px;
 }

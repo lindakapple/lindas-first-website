@@ -6,13 +6,27 @@
     <link rel="stylesheet" href="./main.css" type="text/css">
   </head>
   <body>
-    <h1>Help me choose!</h1>
-    <div class="inputSection">
-      <div class="inputs">
-        <input placeholder="Something.."></input>
+      <h1>Help me choose!</h1>
+      <div class="inputSection">
+        <div class="inputs">
+          <input placeholder="Something.."></input>
+        </div>
+        <button class="addOption">Add</button>
       </div>
-      <button class="addOption">Add</button>
-    </div>
-  <button>Go!</button>
-  </body>
-</html>
+      <div class="resultSection"></div>
+      <button>Go!</button>
+
+      <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+      <script>
+        $(function() {
+          $('.resultSection').hide()
+
+            var add_option = function() {
+              $('.inputs').append('<input></input>')
+            }
+
+            $('.addOption').click(add_option)
+          })
+      </script>
+    </body>
+  </html>
